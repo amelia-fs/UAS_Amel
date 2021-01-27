@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Order"
+    android:orientation="vertical"
+    android:gravity="center">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="INSERT DATA ORDER"
+        android:textSize="20sp"
+        android:textAlignment="center"
+        android:gravity="center_horizontal"
+        android:layout_margin="10dp"
+        android:textStyle="bold"/>
+    <EditText
+        style="@style/editTextLogin"
+        android:id="@+id/input_ido"
+        android:hint="ID Order!"/>
+    <EditText
+        style="@style/editTextLogin"
+        android:id="@+id/input_namao"
+        android:hint="Name Customer!"/>
+    <EditText
+        style="@style/editTextLogin"
+        android:id="@+id/input_kueo"
+        android:hint="Name Cake!"/>
+    <EditText
+        style="@style/editTextLogin"
+        android:id="@+id/input_rasao"
+        android:hint="Taste Here!"/>
+    <EditText
+        style="@style/editTextLogin"
+        android:id="@+id/input_jumlaho"
+        android:hint="Quantity Here!"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+        <Button
+            style="@style/btnlogin"
+            android:id="@+id/btn_submit"
+            android:text="Submit"
+            android:onClick="addDataOrder"/>
+        <Button
+            style="@style/btnlogin"
+            android:id="@+id/btn_show"
+            android:text="Show All"
+            android:onClick="showAllOrder"/>
+    </LinearLayout>
+</LinearLayout>
